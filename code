@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib as plt
+from matlplotlib import pyplot
+url=r"C:\Users\USER\Desktop\country dataset.csv"
+df=pd.read_csv(url)
+print(df.head(5))
+print(df.tail(5))
+header=["Country","Region"]
+df.column=header
+print(plt.pyplot.hist(df["Country,Region"]))
+print(plt.pyplot.xlabel("Country"))
+print(plt.pyplot.ylabel("Region"))
+print(plt.pyplot.title("Place bins"))
